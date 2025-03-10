@@ -3,6 +3,7 @@ package com.fernando.common;
 public enum AlgorithmType {
     FCFS,
     SJF,
+    ROUNDROBIN,
     PRIORITY;
 
     public static AlgorithmType fromString(String value) {

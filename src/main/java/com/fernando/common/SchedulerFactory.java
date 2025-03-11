@@ -1,8 +1,6 @@
 package com.fernando.common;
 
-import com.fernando.algorithms.FCFS;
-import com.fernando.algorithms.RoundRobin;
-import com.fernando.algorithms.SJF;
+import com.fernando.algorithms.*;
 
 import java.util.HashMap;
 
@@ -18,6 +16,9 @@ public class SchedulerFactory {
         registerAlgorithm(AlgorithmType.FCFS, new FCFS());
         registerAlgorithm(AlgorithmType.SJF, new SJF());
         registerAlgorithm(AlgorithmType.ROUNDROBIN, new RoundRobin());
+        registerAlgorithm(AlgorithmType.MULTILEVELFEEDBACKQUEUE, new MultilevelFeedbackQueue());
+        registerAlgorithm(AlgorithmType.CTSS, new CTSS());
+        registerAlgorithm(AlgorithmType.EDF, new EDF());
     }
 
     public static SchedulerFactory getInstance() {

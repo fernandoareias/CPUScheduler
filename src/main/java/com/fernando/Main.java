@@ -41,7 +41,12 @@ public class Main {
         long startTimeProcessCreation = System.nanoTime();
 
         for (int i = 0; i < processorCount; i++) {
-            scheduler.enqueue(new Process("P" + (i + 1), i, (i + 1) * 2)); // Exemplo de criação de processos
+            String name = "P" + (i + 1);
+            int arrivalTime = i;                      // Tempo de chegada
+            int burstTime = (i + 1) * 2;              // Tempo de execução
+            int deadline = arrivalTime + burstTime + 5; // Prazo (deadline)
+
+            scheduler.enqueue(new Process(name, arrivalTime, burstTime, deadline));
         }
 
         long endTimeProcessCreation = System.nanoTime();

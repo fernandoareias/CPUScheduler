@@ -4,7 +4,10 @@ public enum AlgorithmType {
     FCFS,
     SJF,
     ROUNDROBIN,
-    PRIORITY;
+    MULTILEVELFEEDBACKQUEUE,
+    PRIORITY,
+    EDF,
+    CTSS;
 
     public static AlgorithmType fromString(String value) {
         for (AlgorithmType type : values()) {

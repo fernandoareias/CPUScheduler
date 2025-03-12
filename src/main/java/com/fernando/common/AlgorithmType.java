@@ -7,6 +7,7 @@ public enum AlgorithmType {
     MULTILEVELFEEDBACKQUEUE,
     PRIORITY,
     EDF,
+    TWOLEVELSCHEDULER,
     CTSS;
 
     public static AlgorithmType fromString(String value) {

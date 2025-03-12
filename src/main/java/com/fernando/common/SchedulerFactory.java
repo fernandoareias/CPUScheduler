@@ -19,6 +19,7 @@ public class SchedulerFactory {
         registerAlgorithm(AlgorithmType.MULTILEVELFEEDBACKQUEUE, new MultilevelFeedbackQueue());
         registerAlgorithm(AlgorithmType.CTSS, new CTSS());
         registerAlgorithm(AlgorithmType.EDF, new EDF());
+        registerAlgorithm(AlgorithmType.TWOLEVELSCHEDULER, new TwoLevelScheduler());
     }
 
     public static SchedulerFactory getInstance() {

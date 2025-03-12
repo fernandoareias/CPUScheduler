@@ -6,6 +6,7 @@ import com.fernando.common.Process;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+// Cmpatible Time-Sharing System
 public class CTSS implements Scheduler {
     private static final int DEFAULT_QUANTUM = 5; // Quantum padrão
     private Deque<Process> queue;                // Fila de processos (Deque para eficiência)
